@@ -1,0 +1,24 @@
+#!/bin/bash
+
+DIR=$(pwd);
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+MUSIC_CONFIG="$DIR/MUSIC"
+
+if [[ -f "$MUSIC_CONFIG" ]]; then
+	if [ $3 -eq 1 ]; then
+		while read -r LINE || [[ -n $LINE ]]; do
+				SPLIT=(${LINE//=/ })
+				BRANCH=${SPLIT[0]}
+				SPOTIFY_URI=${SPLIT[1]}
+
+				if [ $BRANCH = $CURRENT_BRANCH ]; then
+					spt play --uri=$SPOTIFY_URI
+				fi
+		done < $MUSIC_CONFIG;
+	fi
+else
+	echo ""
+	echo ""
+	echo "MUSIC file doesn't exist. create one:"
+	echo "echo \"main=spotify:track:7E6VM4eg8ADYdgbMnXO97d\" >> MUSIC"
+fi
