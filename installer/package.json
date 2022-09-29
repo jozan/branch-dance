@@ -1,0 +1,32 @@
+{
+  "name": "branch-dance",
+  "version": "0.0.7",
+  "description": "theme music for your branches",
+  "main": "./bin/index.js",
+  "bin": {
+    "branch-dance": "./bin/index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jozan/branch-dance.git"
+  },
+  "keywords": [
+    "music",
+    "spotify",
+    "git"
+  ],
+  "author": "jozan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jozan/branch-dance/issues"
+  },
+  "homepage": "https://github.com/jozan/branch-dance#readme",
+  "dependencies": {
+    "execa": "6.1.0",
+    "got": "^12.5.1",
+    "listr": "0.14.3"
+  }
+}

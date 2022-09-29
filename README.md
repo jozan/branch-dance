@@ -2,7 +2,13 @@
 
 theme music for your branches
 
-## usage
+## setup
+
+```sh
+npx branch-dance
+```
+
+## alternatively manual install
 
 install the hook
 
