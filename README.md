@@ -2,6 +2,12 @@
 
 theme music for your branches
 
+## requirements
+
+- macos or linux
+- git (obviously)
+- [spotify-tui](https://github.com/Rigellute/spotify-tui) (set it up)
+
 ## setup
 
 ```sh
@@ -22,16 +28,12 @@ configure music per branch using spotify uris. the script reads `MUSIC` file in 
 $ echo "main=spotify:track:7E6VM4eg8ADYdgbMnXO97d" >> MUSIC
 ```
 
-start switching branches
+## usage
+
+after setup start switching branches while spotify is on
 
 ```sh
 $ git checkout main
 Switched to branch 'main'
 ▶ Komm, süsser Tod - Astrophysics
 ```
-
-## requirements
-
-- macos or linux
-- git (obviously)
-- [spotify-tui](https://github.com/Rigellute/spotify-tui) (set it up)
