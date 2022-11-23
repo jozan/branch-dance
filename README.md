@@ -16,7 +16,7 @@ npx branch-dance
 
 ## alternatively manual install
 
-install the hook
+install the hook by grabbing `post-checkout` from the repo and putting it in your `.git/hooks` directory
 
 ```sh
 $ mv post-checkout .git/hooks/post-checkout

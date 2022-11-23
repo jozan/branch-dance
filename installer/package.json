@@ -1,12 +1,13 @@
 {
   "name": "branch-dance",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "theme music for your branches",
   "main": "./bin/index.js",
   "bin": {
     "branch-dance": "./bin/index.mjs"
   },
   "scripts": {
+    "prepublish": "cp ../README.md ./README.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
