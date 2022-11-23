@@ -37,3 +37,5 @@ $ git checkout main
 Switched to branch 'main'
 ▶ Komm, süsser Tod - Astrophysics
 ```
+
+configure branches and tracks/albums using spotify uris in `MUSIC` file in your repo's root
